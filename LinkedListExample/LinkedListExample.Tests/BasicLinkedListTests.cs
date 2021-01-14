@@ -8,6 +8,13 @@ namespace LinkedListExample.Tests
     public class BasicLinkedListTests
     {
         [TestMethod]
+        public void TestEmpty()
+        {
+            IntegerLinkedList ill = new IntegerLinkedList();
+            Assert.AreEqual(0, ill.Count);
+        }
+
+        [TestMethod]
         public void TestCount()
         {
             var ill = new IntegerLinkedList(5);
